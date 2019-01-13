@@ -3,9 +3,7 @@
 #include "game.h"
 
 #define SECONDS 1000000
-#define SPEED 3
-using namespace std;
-
+#define SPEED 4
 
 
 int main() {
@@ -42,15 +40,12 @@ int main() {
     initRect(rectArray);
     
     while(window.isOpen()) {
-        // Event handling
         sf::Event event;
         while(window.pollEvent(event)) {
             if(event.type==sf::Event::Closed) {
                 window.close();
             }
         }
-        
-        // Draw stuff
         
         window.clear(sf::Color::Black);
         
